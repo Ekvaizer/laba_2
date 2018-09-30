@@ -53,13 +53,13 @@ public class labka_2 {
 	
 
 	private static void virajenie() {
-		// TODO Auto-generated method stub
-		int s=0;
-		for(int i = 1;i<10000;i++) {
+			// TODO Auto-generated method stub
+		double s=0;
+		for(int i = 1;i<11;i++) {
 			  if(i%2==0)
-	                s-=1/i;
+	                s-=1/ (double)i;
 	            else
-	                s+= 1/i;
+	                s+= 1/ (double) i;
 	 
 	}
 		System.out.println("Выражения ровно = "+s);
