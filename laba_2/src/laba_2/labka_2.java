@@ -30,7 +30,7 @@ public class labka_2 {
 	        double k = 0;
 
 
-	        for (int a = 1; a < 101; a++) {
+	        for (int a = 1; a < 10001;a++){
 	            a2 = a * a;
 	            for (int b = 1; b < 101; b++) {
 	                b2 = b * b;
