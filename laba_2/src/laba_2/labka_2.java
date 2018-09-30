@@ -8,8 +8,8 @@ public class labka_2 {
 		// TODO Auto-generated method stub
 			 
 		 
-			System.out.println("1 - Проверка теоремы Ферма");
-			System.out.println("2 - Вычесления выражения ");
+			System.out.println("1 - РџСЂРѕРІРµСЂРєР° С‚РµРѕСЂРµРјС‹ Р¤РµСЂРјР°");
+			System.out.println("2 - Р’С‹С‡РµСЃР»РµРЅРёСЏ РІС‹СЂР°Р¶РµРЅРёСЏ ");
 			int vvod=scn.nextInt();
   switch(vvod) {
   case 1 : ferma();
@@ -44,7 +44,7 @@ public class labka_2 {
 
 	            }
 	        }
-	        System.out.println("Чтобы увеличить степень в каждом цыкле добавте в каждое выражения h=x*x -где х степень");
+	        System.out.println("Р§С‚РѕР±С‹ СѓРІРµР»РёС‡РёС‚СЊ СЃС‚РµРїРµРЅСЊ РІ РєР°Р¶РґРѕРј С†С‹РєР»Рµ РґРѕР±Р°РІС‚Рµ РІ РєР°Р¶РґРѕРµ РІС‹СЂР°Р¶РµРЅРёСЏ h=x*x -РіРґРµ С… СЃС‚РµРїРµРЅСЊ");
 	    }
 
 
@@ -62,6 +62,6 @@ public class labka_2 {
 	                s+= 1/i;
 	 
 	}
-		System.out.println("Выражения ровно = "+s);
+		System.out.println("Р’С‹СЂР°Р¶РµРЅРёСЏ СЂРѕРІРЅРѕ = "+s);
 }
 }
