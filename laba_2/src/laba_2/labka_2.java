@@ -23,34 +23,69 @@ public class labka_2 {
 	}
 	
 	private static void ferma() {
-		// TODO Auto-generated method stub
-		   double a2 = 0;
-	        double b2 = 0;
-	        double c2 = 0;
-	        double k = 0;
+		       Scanner scan= new Scanner(System.in);
+        System.out.println("Проверка теоремы Ферма.");
+        int a=0;
+        int b=0;
+        int c=0;
+        int v=0;
+        int l=101;
+        double result=0;
+        boolean flag=false;
+        System.out.println("Задайте степень n :");
+        while (true) {
+            v = scan.nextInt();
+            if(v>2)
+                break;
+            System.out.println("Значение степени должно быть более двух!");
+        }
+
+        for (a = 1; a <l ; a++) {
+            for (b = 1; b < l; b++) {
+                for (c = 1; c < l; c++) {
+                   result= Math.pow((double)a,(double)v) +
+                           Math.pow((double)b,(double)v);
+                  if(result==Math.pow((double)c,(double)v)) {
+                      flag =true;
+                      System.out.println("Решение найдено! a="+a+
+                      " b="+b+" c="+c);
+                  }
+
+                }
+            }
+        }
+        if(flag==false)
+            System.out.println("Для заданных чисел и степени решения не найдено.");
+
+        int d=0;
+        System.out.println("Проверить решения для n=2?\n" +
+                "(нажмите 1 )");
+        d=scan.nextInt();
+        switch (d){
+            case 1:
+                v=2;
+                for (a = 1; a <l ; a++) {
+                    for (b = 1; b < l; b++) {
+                        for (c = 1; c < l; c++) {
+                            result= Math.pow((double)a,(double)v) +
+                                    Math.pow((double)b,(double)v);
+                            if(result==Math.pow((double)c,(double)v)) {
+                                flag =true;
+                                System.out.println("Решение найдено!\na="+a+
+                                        " b="+b+" c="+c);
+                            }
+
+                        }
+                    }
+                }
 
 
-	        for (int a = 1; a < 10001;a++){
-	            a2 = a * a;
-	            for (int b = 1; b < 101; b++) {
-	                b2 = b * b;
-	                for (int c = 1; c < 101; c++) {
-	                    c2 = c * c;
-	                    k = a2 + b2;
-	                    if (k == c2)
-	                        System.out.println("verno:" + a + ", " + b + ", " + c);
-	                }
-
-
-	            }
-	        }
-	        System.out.println("Чтобы увеличить степень в каждом цыкле добавте в каждое выражения h=x*x -где х степень");
-	    }
-
-
-
-
-	
+                break;
+            default:
+                break;
+        }
+        
+    }
 
 	private static void virajenie() {
 			// TODO Auto-generated method stub
